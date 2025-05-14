@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 with open("tokenizer.pkl","rb")  as file:
     tokenizer = pickle.load(file)
 
-model = load_model("lstm_grp.keras")
+model = load_model("lstm_grp.h5")
 
 max_sequence_len = model.input_shape[1]+1
 
